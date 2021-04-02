@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title> Family Book.</title>
+</head>
+
+<body>
+
+  <h1 id="heading">My Family Book</h1>
+  <img id="album" src="https://languageduringmealtime.com/wp-content/uploads/2014/11/The-family-book-e1417314391978.jpg">
+    <h2></h2>
+  <div>
+    <button type="button" onclick="nextslide()"> Next </button>
+  </div>
+  <p id="reasontext"></p>
+    <style>
+        body{
+            text-align: center;
+            border-color: yellowgreen;
+        }
+    </style>
+    <script>
+        var images = [
+  "nanji.PNG",
+  "nani.PNG",
+  "anandji.PNG",
+  "dadi.PNG",
+  "dad.PNG",
+  "mom.PNG"
+];
+
+var reasontext = [
+  "My Nanaji",
+  "My Naniji",
+  "My Late GrandFather",
+  "My Grandmother",
+  "My Dad",
+  "My Mom"
+];
+
+var i = 0;
+function nextslide() {
+  document.getElementById("reasontext").innerHTML = reasontext[i];
+  document.getElementById("album").src = images[i];
+  i++;
+}
+
+    </script>
+</body>
+
+</html>
